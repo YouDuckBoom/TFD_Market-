@@ -1,0 +1,11 @@
+# Ignore HTML test files and their assets
+*.html
+*_files/
+
+# Ignore Chrome extension packaging artifacts
+*.crx
+*.pem
+*.zip
+
+# Ignore scratch files
+scratch.js

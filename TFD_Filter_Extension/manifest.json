@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "TFD Market Filter Saver",
+  "version": "1.0",
+  "description": "保存和加载网页中的左侧过滤条件预设",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
